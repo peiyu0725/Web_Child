@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<script src="bootstrap/js/bootstrap.min.js"></script>		
+		<script src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/rwd.js"></script>
+		<script type="text/javascript" src="js/hello.js"></script>
+		<script type="text/javascript" src="js/team.js"></script>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/mystyle.css" rel="stylesheet">
+		<title>童心未泯 憶趣玩</title>
+	</head>
+	<body>
+		<div class="container" id="container">
+			<!-- <div class="logo" style="display:none;"><img src="img/logo.png" class="logo_img"/></div> -->
+			<div class="logo" style="display:none;"><a href="index.html"><img src="img/btn_logo/logo1_b.png" class="logo_img"/></a></div>
+			<div class="navbar">
+				<div class="list_btn" id="listbtn" style="display:none;">
+					<i class="fa fa-bars" id="listbar" data-check="1"></i>
+				</div>
+				<ul class="menu">
+					<li class="home_li"><a href="index.html"><img src="img/btn_logo/home_li.png" class="lim_img home_li_img"></a></li>
+					<li class="about_li"><a><img src="img/btn_logo/about_li.png" class="lim_img about_li_img"></a></li>
+					<li class="play_li" id="play_top"><a><img src="img/btn_logo/play_li.png" class="lim_img play_lim_img"></a>
+						<ul class="play_ul">
+							<li class="diabolo_li"><a><img src="img/btn_logo/diabolo_li.png" class="chlim_img diabolo_li_img"></a></li>
+							<li class="ggro_li"><a><img src="img/btn_logo/ggro_li.png" class="chlim_img ggro_li_img"></a></li>
+							<li class="shuttle_li"><a><img src="img/btn_logo/shuttle_li.png" class="chlim_img shuttle_li_img"></a></li>
+							<li class="kendama_li"><a><img src="img/btn_logo/kendama_li.png" class="chlim_img kendama_li_img"></a></li>
+							<li class="marbles_li"><a><img src="img/btn_logo/marbles_li.png" class="chlim_img marbles_li_img"></a></li>
+							<li class="bamboo_li"><a><img src="img/btn_logo/bamboo_li.png" class="chlim_img bamboo_lim_img"></a></li>
+						</ul>
+					</li>
+					<li class="team_li"><a><img src="img/btn_logo/team_li.png" class="lim_img team_lim_img"></a></li>
+				</ul>
+
+				<div class="bar_list">
+					<ul class="main_ul">
+						<li class="home_li"><a href="index.html"><img src="img/btn_logo/home_li.png" class="li_img home_li_img"></a></li>
+						<li class="about_li"><a><img src="img/btn_logo/about_li.png" class="li_img about_li_img"></a></li>
+						<li class="play_li" id="play_top"><a><img src="img/btn_logo/play_li.png" class="li_img play_li_img"></a>
+							<ul class="play_ul">
+								<li class="diabolo_li"><a><img src="img/btn_logo/diabolo_li.png" class="chli_img diabolo_li_img"></a></li>
+								<li class="ggro_li"><a><img src="img/btn_logo/ggro_li.png" class="chli_img ggro_li_img"></a></li>
+								<li class="shuttle_li"><a><img src="img/btn_logo/shuttle_li.png" class="chli_img shuttle_li_img"></a></li>
+								<li class="kendama_li"><a><img src="img/btn_logo/kendama_li.png" class="chli_img kendama_li_img"></a></li>
+								<li class="marbles_li"><a><img src="img/btn_logo/marbles_li.png" class="chli_img marbles_li_img"></a></li>
+								<li class="bamboo_li"><a><img src="img/btn_logo/bamboo_li.png" class="bamboo_li_img"></a></li>
+							</ul>
+						</li>
+						<li class="team_li"><a><img src="img/btn_logo/team_li.png" class="li_img team_li_img"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active" id="li1_nav"><span style="display:none; width:38px;">首頁</span></li>
+					<li id="li2_nav"><span style="display:none;width:38px;">關於</span></li>
+					<li id="li3_nav"><span style="display:none;width:77px;">扯鈴/陀螺</span></li>
+					<li id="li4_nav"><span style="display:none;width:77px;">毽子/劍玉</span></li>
+					<li id="li5_nav"><span style="display:none;width:90px;">彈珠/竹蜻蜓</span></li>
+					<li id="li6_nav"><span style="display:none;width:70px;">製作團隊</span></li>
+				</ul>
+			</div>
+			<div class="home p01 page" id="_home" data-id=1>
+				<img src="img/btn_logo/logo1_w.svg" class="home_img"/>
+			</div>
+			<div class="about p02 page" id="_about" data-id=2>
+				<div class="about_title">
+					<img src="img/font/about_title.svg" class="about_img"/>
+				</div>
+				<div class="about_text">
+古時候，當時沒有電視或是電動玩具，因此當時的玩具利用周遭的素材，利用天馬行空的創造力來製作玩具，只要有一條繩子、一顆彈珠或是一根竹子就可以玩出各式各樣的遊戲。<br>童玩的種類琳瑯滿目，各式各樣的特色把他們劃分為以下三大種類:竹子類、木頭類、紙類，然而又以木頭類的童玩占最大多數類型，到現今主要保存完好的童玩為木頭類型居多。<br>童玩的發展，分為鄉土農業、鄉土工業、近代機工、現代電子等四個時期，從古早到現代，從木頭製品漸漸的被電子產品所取代，童玩不僅是單純的玩具，也是代表著各時期的生活型態。<br>童玩不只是一種玩具，它還是一種民俗體育。在每個年代都有獨特的玩法，各式各樣的特色，這些童玩不僅意味著每個年代之間的社會型態、環境變遷，更是代表各時期生活藝術之美。
+				</div>
+			</div>
+			<div class="play1 p03 page" data-id=3>
+				<img src="img/btn_logo/back.png" class="page_back"/>
+				<!-- 扯鈴 -->
+				<div class="slide" id="_diabolo">
+					<button class="change_btn prevBtn" data="diabolo_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="diabolo_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="diabolo_ul">
+					  <li>
+						<div class="slide-page page-1 diabolo">
+							<div class="pageword1 changeword">
+								<div class="center">
+									<img src="img/font/diabolo_title.svg" id="diabolo_img" class="play_title"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+							<div class="pageimage1">
+								<img class="changeimg" src="img/play/png/diabolo.png"/>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 diabolo">
+							<div class="pageimage3">
+								<img src="img/play/png/diabolo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+扯鈴是一個底面圓形、側面雙凹的木質物體。<br>傳統的中國扯鈴有挖哨，隨著旋轉速度加快會發出聲音；而歐美所使用的扯鈴一般以較軟的塑膠材質製成，沒有哨，不會因為發聲而消耗能量，某些還有軸承系統，能夠讓轉速維持更久。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 diabolo">
+							<div class="pageimage3">
+								<img src="img/play/png/diabolo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>歷史</h1><br>
+								<div class="text1">
+扯鈴是我國的民俗技藝，也是相傳已久的童玩之一，以往我國雜耍表演中，有耍、變、練三大技藝；耍是耍罐子，變是變戲法，練是練扯鈴。可見扯鈴在我國的民俗技藝中，占有重要的地位。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 diabolo">
+							<div class="pageimage3">
+								<img src="img/play/png/diabolo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>玩法</h1><br>
+								<div class="text1">
+玩的時候以兩根細木棍繫上一條細棉線，再以雙手拉扯木棍，使鈴在棉線上加速運轉，因空氣流動而發出嗡嗡的聲音，技巧純熟時，可玩出許多花樣，尤其融入音樂、舞蹈、戲劇、更可增加其趣味性和可看性。
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<!-- 陀螺 -->
+				<div class="slide" id="_ggro">
+					<button class="change_btn prevBtn" data="ggro_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="ggro_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="ggro_ul">
+					  <li>
+						<div class="slide-page page-1 ggro">
+							<div class="pageimage2">
+								<img class="changeimg" src="img/play/png/ggro.png"/>
+							</div>
+							<div class="pageword2 changeword">
+								<div class="center">
+									<img src="img/font/ggro_title.svg" id="ggro_img" class="play_title"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 ggro">
+							<div class="pageimage3">
+								<img src="img/play/png/ggro.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+陀螺或旋轉陀螺是一種玩具，它可以繞著中心軸旋轉，平衡於陀螺尖端的一點，是在許多考古遺跡裏最古老的、可被鑑定的玩具之一，也時常被當做賭博與預言的工具之一，有些桌上角色扮演遊戲仍舊用陀螺來製造亂數，使用同樣的道理，也可以使圖釘旋轉。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 ggro">
+							<div class="pageimage3">
+								<img src="img/play/png/ggro.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>歷史</h1><br>
+								<div class="text1">
+中國在宋朝時就已出現類似陀螺的玩具，名字叫做「千千」。<br>古代的千千是直徑四寸象牙製的圓盤，當中有一個一寸長的鐵針，用手擰轉這鐵針，使針尖立在桌面上旋轉如飛，快停時再用衣袖拂動它，比賽誰轉得久。這是當時宮女們在帝王深宮內的遊戲。<br>「陀螺」的名詞最早出現於明朝。是否由宋朝的千千演變而來，已不可考，但明朝時陀螺已成為兒童的玩具。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 ggro">
+							<div class="pageimage3">
+								<img src="img/play/png/ggro.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>玩法</h1><br>
+								<div class="text1">
+陀螺的旋轉功能是依靠著陀螺儀原理，將細線緊繞在陀螺的圓柱部位，用力拉甩在地上。大多時候，陀螺會先不穩定的搖晃在地面上，直到陀螺尖將陀螺撐起立直。經過直立的旋轉了一段時間，陀螺的角動量會因為摩擦力和空氣阻力的影響漸漸地減小，導致越加明顯的進動現象，終於在最後激烈的翻跳後，倒落於地上。
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="play2 p04 page" data-id=4>
+				<img src="img/btn_logo/back.png" class="page_back"/>
+				<!-- 毽子 -->
+				<div class="slide" id="_shuttle">
+					<button class="change_btn prevBtn" data="shuttle_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="shuttle_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="shuttle_ul">
+					  <li>
+						<div class="slide-page page-1 shuttle">
+							<div class="pageword1 changeword">
+								<div class="center">
+									<img src="img/font/shuttle_title.svg" id="shuttle_img" class="play_title"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+							<div class="pageimage1">
+								<img class="changeimg" src="img/play/png/shuttle.png"/>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 shuttle">
+							<div class="pageimage3">
+								<img src="img/play/png/shuttle.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+毽子，又叫"打雞"，為傳統的民間體育活動，歷史悠久，在明清時期時，街坊上的民間藝人畫作中都繪有踢毽的生動畫面，對男女老少都相宜，點滴時間也可以利用，活動量可以自由控制，只需要一個毽子、一塊小小的空場地就可以，不僅可以作為一種趣味娛樂的方式，還因其可以強身健體，而受到人們的喜愛和重視。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 shuttle">
+							<div class="pageimage3">
+								<img src="img/play/png/shuttle.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>歷史</h1><br>
+								<div class="text1">
+毽子的前身為"蹴踘"，是為了鍛鍊軍中士兵與紓解壓力的體育活動，逐漸轉為民間遊戲。<br>毽子起源於漢代，並盛行於南北朝及隋唐，是該朝代的青少年及兒童喜愛，然而在明朝時期，不僅盛行，且被人利用畫作或是散文記載下來，讓世人漸漸更加了解此項活動。<br>到了清代末年，踢毽的參加人數之多，達到踢毽的鼎盛時期。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 shuttle">
+							<div class="pageimage3">
+								<img src="img/play/png/shuttle.png"/>
+							</div>
+							<div class="pageword4">
+								<h1>玩法</h1><br>
+								<div class="text2">
+毽子的玩法分為四種：<br>1.盤踢(腳內側踢)：盤踢是踢毽入門的基礎，可以單腳持續踢，也可以雙腳輪流踢擊，也是現在最常見的踢毽技巧。<br>2.磕踢(膝蓋踢)：磕踢特別適用於毽子下落時距離身體非常近的情況，這項踢擊技巧可以與盤踢交替進行，也是盤踢所衍伸的技巧。<br>3.拐踢(腳外側踢)：利用大腿去接踢，適用在當毽子距離身體較遠的時候，這種踢法能夠讓毽子在身體外側或斜後方皆可以觸及到。<br>4.繃踢(用腳尖或腳背踢)：繃踢的發力可高可低，能救起即將落地的毽子。
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<!-- 劍玉 -->
+				<div class="slide" id="_kendama">
+					<button class="change_btn prevBtn" data="kendama_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="kendama_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="kendama_ul">
+					  <li>
+						<div class="slide-page page-1 kendama">
+							<div class="pageimage2">
+								<img class="changeimg" src="img/play/png/kendama.png"/>
+							</div>
+							<div class="pageword2 changeword">
+								<div class="center">
+									<img src="img/font/kendama_title.svg" id="kendama_img" class="play_title"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 kendama">
+							<div class="pageimage3">
+								<img src="img/play/png/kendama.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+劍玉是日本人說的（けん玉），日文發音為–KENDAMA。<br>劍 – 為十字木頭的部份<br>玉 – 為球體<br>穴 – 為球孔
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 kendama">
+							<div class="pageimage3">
+								<img src="img/play/png/kendama.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>歷史</h1><br>
+								<div class="text1">
+從法國傳到日本（當時日本為江戶時代），當時並沒有一個統合的名稱，藉由大家的口耳相傳，劍玉的名稱也一直在改變。<br>約1919年時，開始有人製造並販賣，當時價格便宜，所以造成相當大的流行。那時也開始有競技型的比賽出現，幾乎變成一種全國的運動。之後因戰爭的影響，昭和時期劍玉的名稱也變得很有軍事特色 –『劍玉』，原因是劍身部分的感覺讓人覺得像武器。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 kendama">
+							<div class="pageimage3">
+								<img src="img/play/png/kendama.png"/>
+							</div>
+							<div class="pageword4" style="font-size:16pt;">
+								<h1>玩法</h1><br>
+								<div class="text2">
+練劍玉就要先學怎麼拿劍玉，基本手勢很重要，它可以幫助你學習更加順利。<br>1.大皿手勢：劍上的線洞朝下，大拇指、食指捏住劍身與皿胴的交界處，另外3根手指托住側邊小皿，或指使用2指，小指懸空。<br>2.蠟燭手勢：劍頭朝下，小皿朝自己，使用大拇指、食指、中指三根手指捏住劍頭部份。<br>3.極意手勢：劍頭朝掌心，線朝下，手握住大、小皿兩側，劍身保持水平。<br>4.止劍手勢：劍頭朝上，線頭朝下，手握住劍身，掌心與劍身要有空間，劍身稍傾斜即可。<br>5.持球手勢：球孔朝上，大拇指、食指平均在球兩側，孔與大拇指、食指成一直線。
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="play3 p05 page" data-id=5>
+				<img src="img/btn_logo/back.png" class="page_back"/>
+				<!-- 彈珠 -->
+				<div class="slide" id="_marbles">
+					<button class="change_btn prevBtn" data="marbles_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="marbles_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="marbles_ul">
+					  <li>
+						<div class="slide-page page-1 marbles">
+							<div class="pageword1 changeword">
+								<div class="center">
+									<img src="img/font/marbles_title.svg" id="marbles_img" class="play_title"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+							<div class="pageimage1">
+								<img class="changeimg" src="img/play/png/marbles.png"/>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 marbles">
+							<div class="pageimage3">
+								<img src="img/play/png/marbles.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+玻璃彈珠使用的是廢棄的玻璃瓶製作的，回收的玻璃瓶打碎後，再放入1200～1400攝氏的高溫熔爐中融化就會變成液體，並倒入作業爐下方的開口，將液態的玻璃剪成塊狀，被切割後的玻璃塊在冷卻槽中被揉成一顆顆彈珠。<br>通常為小朋友的小玩意，將對手的彈珠彈走，他們這小遊戲得到最大的快樂。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 marbles">
+							<div class="pageimage3">
+								<img src="img/play/png/marbles.png"/>
+							</div>
+							<div class="pageword4">
+								<h1>歷史</h1><br>
+								<div class="text2">
+彈珠即玻璃球為玩具的一種，也被稱作「波子」與「彈子」，以前都是由瑪瑙或石頭所造，現在則用玻璃製成，製作成球形作玩耍及欣賞。<br>彈珠也作為清涼飲料瓶的栓子，也就是我們常說的彈珠汽水。在棋類中，中國跳棋是以彈珠為棋子。<br>彈珠的顏色五花八門，用不同的材料就造出不同顏色的彈珠。<br>也有人以收集彈珠為愛好，基於懷舊也可能因為欣賞藝術。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 marbles">
+							<div class="pageimage3">
+								<img src="img/play/png/marbles.png"/>
+							</div>
+							<div class="pageword4">
+								<h1>玩法</h1><br>
+								<div class="text2">
+彈珠有很多不同的玩法及規則。<br>一、先在地上畫一條線段，在遠處的地上掏出一個或者幾個洞，然後玩家們一次將彈珠從畫線處彈出，當玩家依次將彈珠彈進所有洞后，這個彈珠就可以去撞其他的彈珠，如果撞到其他彈珠，此玩家獲勝；被撞到的彈珠持有者落敗。<br>二、玩法是用木板或者磚頭搭建一個斜坡，玩家順次將彈珠滾下，如果後來的玩家的彈珠滾下後碰到了其它彈珠那麼此玩家獲勝，被撞到的落敗。<br>彈珠的玩法繁多，像是彈珠大賽，而場地通常都會選擇在泥地上，而且泥地最好還要有起伏高度，這樣才能增加遊戲的困難度。但是不管哪一種玩法都能讓人情緒高昂，樂趣無窮！
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<!-- 竹蜻蜓 -->
+				<div class="slide" id="_bamboo">
+					<button class="change_btn prevBtn" data="bamboo_ul"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<button class="change_btn nextBtn" data="bamboo_ul"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<ul class="width" id="bamboo_ul">
+					  <li>
+						<div class="slide-page page-1 bamboo">
+							<div class="pageimage2">
+								<img class="changeimg" src="img/play/png/bamboo.png"/>
+							</div>
+							<div class="pageword2 changeword">
+								<div class="center">
+									<img src="img/font/bamboo_title.svg" id="bamboo_img" class="play_title1"/>
+									<img src="img/btn_logo/enter.png" class="page_open"/>
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-2 bamboo">
+							<div class="pageimage3">
+								<img src="img/play/png/bamboo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>介紹</h1><br>
+								<div class="text1">
+外形成T字形，橫的片面像螺旋槳，槳翼中間插一根竹棍子，兩手摩擦，竹蜻蜓及會旋轉飛上天。<br>被後人稱為"航空之父"的喬治也為竹蜻蜓深深著迷，並利用竹蜻蜓研究出螺旋槳的原理，推動了飛機製造的過程，更帶來後期西方設計師研製直升機的靈感。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-3 bamboo">
+							<div class="pageimage3">
+								<img src="img/play/png/bamboo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>歷史</h1><br>
+								<div class="text1">
+為台灣早期的兒童玩具，因為台灣早期，每戶人家後院多種有竹子。當颱風過後，被吹倒的竹子就會被拿來當材燒，或是被拿去做玩具。然而農村裡的小孩利用竹片製成輕巧且容易的竹蜻蜓。
+								</div>
+							</div>
+						</div>
+					  </li>
+					  <li>
+						<div class="slide-page page-4 bamboo">
+							<div class="pageimage3">
+								<img src="img/play/png/bamboo.png"/>
+							</div>
+							<div class="pageword3">
+								<h1>玩法</h1><br>
+								<div class="text1">
+竹蜻蜓的基本玩法有三種：向上飛、前飛、倒飛。<br>雙手搓著小竹棒，前後搓個幾下，再放掉竹蜻蜓，旋轉槳便會轉動，讓竹蜻蜓向上飛。
+								</div>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<!-- 製作團隊 -->
+			<div class="team p06" id="_team">
+				<div class="left_team">
+					<img src="img/font/team_title.svg" class="team_title"/>
+				</div>
+				<div class="right_team">
+					<div id="stu1" class="tstyle">
+						<div id="id1" class="img_hover">
+							<img class="in_text" id="id1_stu" src="img/team/rayba_hover.png" style="display:none;"/>
+							<img src="img/team/rayba.jpg"/>
+						</div>
+						<div class="div_name"><p>莊晴安</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/profile.php?id=100004985108966&fref=ts" target="_blank"><img src="img/fbicon.png"/></a></div> -->
+					</div>
+					
+					<div id="stu2" class="tstyle">
+						<div id="id2" class="img_hover">
+							<img class="in_text" id="id2_stu" src="img/team/jingyi_hover.png" style="display:none;"/>
+							<img src="img/team/jingyi.jpg"/>
+						</div>
+						<div class="div_name"><p>邱靖貽</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/gius.chen.3" target=_blank><img src="img/fbicon.png"/></a></div> -->
+					</div>
+					
+					<div id="stu3" class="tstyle">
+						<div id="id3" class="img_hover">
+							<img class="in_text" id="id3_stu" src="img/team/peiyu_hover.png" style="display:none;"/>
+							<img src="img/team/peiyu.jpg"/>
+						</div>
+						<div class="div_name"><p>張簡珮伃</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/profile.php?id=100000463361059&fref=ts" target=_blank><img src="img/fbicon.png"/></a></div> -->
+
+					</div>
+					
+					<div id="stu4" class="tstyle">
+						<div id="id4" class="img_hover">
+							<img class="in_text" id="id4_stu" src="img/team/ning_hover.png" style="display:none;"/>
+							<img src="img/team/ning.jpg"/>
+						</div>
+						<div class="div_name"><p>王彥甯</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/profile.php?id=100000371642471&fref=ts" target=_blank><img src="img/fbicon.png"/></a></div> -->
+
+					</div>
+					
+					<div id="stu5" class="tstyle">
+						<div id="id5" class="img_hover">
+							<img class="in_text" id="id5_stu" src="img/team/zhaoyu_hover.png" style="display:none;"/>
+							<img src="img/team/zhaoyu.jpg"/>
+						</div>
+						<div class="div_name"><p>劉炤妤</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/profile.php?id=100000346390856&fref=ts" target=_blank><img src="img/fbicon.png"/></a></div> -->
+
+					</div>
+					
+					<div id="teacher" class="tstyle">
+						<div id="id6" class="img_hover">
+							<img class="in_text" id="id6_stu" src="img/team/teacher_hover.png" style="display:none;"/>
+							<img src="img/team/teacher.jpg">
+						</div>
+						<div class="div_name"><p>黃政揆老師</p></div>
+						<!-- <div class="img_icon"><a href="https://www.facebook.com/gius.chen.3" target=_blank><img src="img/fbicon.png"/></a></div> -->
+					</div>
+				</div>
+			</div>
+			<div id="gotop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+			<div class="team_cc">
+				<a class="references_div" style="font-size:14pt;" data-toggle="modal" data-target="#references">參考資料</a><br>© 2017 沙發馬鈴薯們, all rights preserved.</br>
+				Powered by
+				<a href="http://kueiapp.com" target="_blank"> Kuei</a>,
+				<a href="https://www.facebook.com/profile.php?id=100000346390856&fref=ts" target="_blank">Zhao-Yu</a>,
+				<a href="https://www.facebook.com/gius.chen.3?fref=ts" target="_blank"> Jing-Yi</a>,
+				<a href="https://www.facebook.com/profile.php?id=100000463361059" target="_blank"> Pei-Yu</a>,
+				<a href="https://www.facebook.com/profile.php?id=100000371642471&fref=ts" target="_blank"> Yen-Ning</a>,
+				<a href="https://www.facebook.com/profile.php?id=100004985108966&fref=ts" target="_blank"> Ching-An</a>
+			</div>
+			<div class="modal fade" id="references" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="references_title">參考文獻</h4>
+						</div>
+						<div class="modal-body">
+							<a href="http://edu.ocac.gov.tw/local/taiwan_toy/toy_list_1_c.htm" target="_blank">認識台灣童玩</a><br>
+							<a href="https://zh.wikipedia.org/wiki/%E7%A9%BA%E7%AB%B9" target="_blank">維基百科-扯鈴</a><br>
+							<a href="http://163.21.131.7/diabolo/" target="_blank">新和扯鈴隊-扯鈴的起源</a><br>
+							<a href="https://zh.wikipedia.org/wiki/%E9%99%80%E8%9E%BA" target="_blank">維基百科-陀螺</a><br>
+							<a href="http://www1.nttu.edu.tw/hepe/sfm/learning/lsport/tuoluo/comefrom.htm" target="_blank">陀螺歷史</a><br>
+							<a href="https://kknews.cc/zh-tw/health/n5zjn4q.html" target="_blank">每日頭條-踢毽子</a><br>
+							<a href="http://folksports.moc.gov.tw/02_knowledge_01_03.aspx" target="_blank">文化部-毽子</a><br>
+							<a href="https://zh.wikipedia.org/wiki/%E5%8A%8D%E7%8E%89" target="_blank">維基百科-劍玉</a><br>
+							<a href="http://www.twwiki.com/wiki/%E5%BD%88%E7%8F%A0" target="_blank">台灣Wiki-彈珠</a><br>
+							<a href="https://www.bomb01.com/article/6968" target="_blank">Bomb01-彈珠介紹</a><br>
+							<a href="http://www.shute.kh.edu.tw/~d941517/homepage/a1.htm" target="_blank">竹蜻蜓歷史</a><br>
+							<a href="https://baike.baidu.com/item/%E7%AB%B9%E8%9C%BB%E8%9C%93/23633" target="_blank">百度百科-竹蜻蜓</a><br>
+							<a href="http://bangjuu.pixnet.net/blog/post/44435706-%E8%83%BD%E6%8E%8C%E6%8F%A1%E6%89%8D%E8%83%BD%E6%9C%89%E6%AD%A1%E6%A8%82-%E7%AB%B9%E8%9C%BB%E8%9C%93%E7%8E%A9%E6%B3%95%E6%AD%A5%E9%A9%9F123" target="_blank">竹蜻蜓玩法</a><br>
+							童玩圖片來源：<br>
+							嘉義紫雲童玩館 團隊自行拍攝、自行收集拍攝
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="references" style="display:none;">
+			
+			</div>
+		</div>
+	</body>
+</html>
